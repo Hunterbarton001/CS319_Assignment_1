@@ -1,0 +1,32 @@
+[
+  {
+    "productName": "Folder",
+    "description": "A cardboard or plastic folder used for organizing loose papers.",
+    "image": "images/folders.jpg"
+  },
+  {
+    "productName": "Notebook",
+    "description": "A bound book used for writing and recording notes.",
+    "image": "images/notebooks.jpg"
+  },
+  {
+      "productName": "Paper",
+      "description": "A sheet material used for writing or printing.",
+      "image": "images/paper.jpg"
+  },
+  {
+    "productName": "Pencils",
+    "description": "A writing instrument made of graphite and clay.",
+    "image": "images/pencils.jpg"
+  },
+  {
+    "productName": "Pens",
+    "description": "A writing instrument used for ink writing.",
+    "image": "images/pens.jpg"
+  },
+  {
+    "productName": "Ruler",
+    "description": "A measuring tool used for straight lines and measurements.",
+    "image": "images/ruler.jpg"
+  }
+]
