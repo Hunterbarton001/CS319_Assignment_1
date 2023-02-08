@@ -12,10 +12,21 @@ body {
     width: 50%;
     margin: 20px auto;
     border: solid 1px black;
+    justify-content: space-between;
 }
 
 .catalogItemText {
     padding: 20px;
+}
+
+.catalogItem h1 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.catalogItem p {
+    font-size: 15px;
+    font-weight: 300;
 }
 
 .catalogItem img {
@@ -24,9 +35,13 @@ body {
     margin: 0;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
     .catalogItem {
         flex-direction: column;
         height: auto;
+    }
+    .catalogItem img {
+        height: auto;
+        width: 100%;
     }
 }
