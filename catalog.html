@@ -36,8 +36,10 @@
         content.forEach((item) => {
           supplies = supplies.concat(`
             <div class="catalogItem">
-                <h1>${item.productName}</h1>
-                <p>${item.description}</p>
+                <div class="catalogItemText">
+                    <h1>${item.productName}</h1>
+                    <p>${item.description}</p>
+                </div>
                 <img src=${item.image} alt=${item.productName}/>
             </div>
           `);

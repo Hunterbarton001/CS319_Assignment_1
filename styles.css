@@ -1,8 +1,32 @@
 body {
     padding: 0;
     margin: 0;
+    background-color: #f1f1f1;
 }
 
 .catalogItem {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 200px;
+    width: 50%;
+    margin: 20px auto;
+    border: solid 1px black;
+}
 
+.catalogItemText {
+    padding: 20px;
+}
+
+.catalogItem img {
+    height: 198px;
+    float: right;
+    margin: 0;
+}
+
+@media only screen and (max-width: 700px) {
+    .catalogItem {
+        flex-direction: column;
+        height: auto;
+    }
 }
