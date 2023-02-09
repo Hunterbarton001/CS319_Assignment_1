@@ -35,13 +35,15 @@
       .then((content) => {
         content.forEach((item) => {
           supplies = supplies.concat(`
-            <div class="catalogItem">
-                <div class="catalogItemText">
-                    <h1>${item.productName}</h1>
-                    <p>${item.description}</p>
+            <a href="product.html" onclick="document.cookie = 'product=${item.productName}'">
+                <div class="catalogItem">
+                    <div class="catalogItemText">
+                        <h1>${item.productName}</h1>
+                        <p>${item.description}</p>
+                    </div>
+                    <img src=${item.image} alt=${item.productName}/>
                 </div>
-                <img src=${item.image} alt=${item.productName}/>
-            </div>
+            </a>
           `);
         });
         document.getElementById("root").innerHTML = supplies;
