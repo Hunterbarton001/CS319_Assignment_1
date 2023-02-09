@@ -73,3 +73,32 @@ a {
     text-decoration: none;
     color: black;
 }
+
+.productContainer {
+    display: flex;
+    margin: 25px auto;
+    flex-direction: column;
+    width: 30%;
+}
+
+.productContainer img {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.buyContainer {
+    display: flex;
+    margin: 25px auto;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 175px;
+}
+
+.buyContainer button {
+    background-color: black;
+    color: #f1f1f1;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+}

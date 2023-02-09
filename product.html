@@ -50,10 +50,14 @@
                 .then((content) => {
                     const item = content.find((item) => item.productName === getCookie('product'));
                     document.getElementById('root').innerHTML = `
-                    <div class="center">
+                    <div class="productContainer">
                         <h1>${item.productName}</h1>
                         <p>${item.description}</p>
                         <img src=${item.image} alt=${item.productName} />
+                        <div class="buyContainer">
+                            <h4>$${item.price}</h4>
+                            <button>Buy Now</button>
+                        </div>
                     </div>
                     `
                 });
