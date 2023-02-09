@@ -28,6 +28,45 @@
 </div>
 
 <script>
+    const items = [
+        {
+            "productName": "Folder",
+            "description": "A cardboard or plastic folder used for organizing loose papers.",
+            "image": "images/folders.jpg",
+            "price":2.99
+        },
+        {
+            "productName": "Notebook",
+            "description": "A bound book used for writing and recording notes.",
+            "image": "images/notebooks.jpg",
+            "price":2.99
+        },
+        {
+            "productName": "Paper",
+            "description": "A sheet material used for writing or printing.",
+            "image": "images/paper.jpg",
+            "price": 5.99
+        },
+        {
+            "productName": "Pencils",
+            "description": "A writing instrument made of graphite and clay.",
+            "image": "images/pencils.jpg",
+            "price":1.99
+        },
+        {
+            "productName": "Pens",
+            "description": "A writing instrument used for ink writing.",
+            "image": "images/pens.jpg",
+            "price":7.99
+        },
+        {
+            "productName": "Ruler",
+            "description": "A measuring tool used for straight lines and measurements.",
+            "image": "images/ruler.jpg",
+            "price": 4.99
+        }
+    ];
+
     function getCookie(cname) {
         let name = cname + "=";
         let decodedCookie = decodeURIComponent(document.cookie);
@@ -43,12 +82,7 @@
         }
         return "";
     }
-
-    fetch('items.json')
-        .then((res) => {
-            res.json()
-                .then((content) => {
-                    const item = content.find((item) => item.productName === getCookie('product'));
+                    const item = items.find((item) => item.productName === getCookie('product'));
                     document.getElementById('root').innerHTML = `
                     <div class="productContainer">
                         <h1>${item.productName}</h1>
@@ -60,8 +94,7 @@
                         </div>
                     </div>
                     `
-                });
-        });
+
 </script>
 </body>
 </html>
