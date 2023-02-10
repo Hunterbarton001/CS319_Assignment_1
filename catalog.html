@@ -27,11 +27,17 @@
 
 </div>
 
+
+
 <script>
+
+
+
+
   let supplies = "";
-  fetch('items.json')
-    .then((res) => {
-      res.json()
+  fetch('./items.json')
+    .then((response) => {
+      response.json()
       .then((content) => {
         content.forEach((item) => {
           supplies = supplies.concat(`
